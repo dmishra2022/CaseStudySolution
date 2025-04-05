@@ -208,4 +208,6 @@ Service B is responsible for:
 
 
 ## Testing via swagger
-* **Swagger UI**: The application includes Swagger UI for easy testing of the APIs. You can access it at `http://localhost:8081/swagger-ui/` for Service A and `http://localhost:8082/swagger-ui/` for Service B.
+* **Swagger UI**: The application includes Swagger UI for easy testing of the APIs.
+* One can access it at `http://localhost:8081/swagger-ui/` for Service A
+* and `http://localhost:8082/swagger-ui/` for Service B.
