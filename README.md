@@ -157,8 +157,8 @@ Service B is responsible for:
 1.  **Clone the repository:**
 
     ```
-    git clone <your_repository_url>
-    cd <your_repository_url>
+    git clone https://github.com/dmishra2022/CaseStudySolution.git
+    cd CaseStudySolution
     ```
 
 2.  **Build the services:**
