@@ -1,0 +1,22 @@
+server:
+  port: 8082 # Or any other port, different from Service A
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:orderdb_b;DB_CLOSE_DELAY=-1 # Use a separate database from Service A
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # Or your database dialect
+    hibernate:
+      ddl-auto: create-drop #  Use "validate" in production!
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
